@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+}
+
+header .logo {
+    font-size: 1.5em;
+}
+
+header .nav a, .auth-btn {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+header .auth-btn {
+    background: #f04e30;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.menu {
+    padding: 20px;
+    text-align: center;
+}
+
+.menu h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    display: inline-block;
+    width: 300px;
+    margin: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.menu-item h3 {
+    margin: 10px;
+    font-size: 1.5em;
+}
+
+.menu-item p {
+    margin: 10px;
+    color: #555;
+}
+
+.menu-item .price {
+    font-weight: bold;
+    color: #f04e30;
+    margin: 10px;
+    font-size: 1.2em;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+}
+
+footer nav a {
+    color: #f04e30;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}

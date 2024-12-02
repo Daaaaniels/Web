@@ -1,0 +1,18 @@
+{% extends 'app.html' %}
+{% block content %}
+
+
+<div class="container">
+  <h2>Esi sveicināts!</h2>
+
+    {% if user %}
+        <p>Konta informācija</p>
+        <ul>
+            <li>Vārds : {{ user[1] }}</li>
+            <li>E-pasts : {{ user[2] }}</li>
+        </ul>
+        <a href="/logout" class="btn btn-dark">Logout</a>
+    {% endif %}
+</div>
+
+{% endblock %}

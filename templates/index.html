@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restorāns</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">🍴 Restorāns</div>
+        <nav class="nav">
+
+            <button class="auth-btn" onclick="window.location.href='/login'">Pieteikties</button> <!-- Link to login page -->
+            <button class="auth-btn" onclick="window.location.href='/register'">Reģistrēties</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="menu" class="menu">
+            <h2>Mūsu ēdienkarte</h2>
+            <div class="menu-item">
+                <img src="static/Images/burger.jpg" alt="Burgera komplekts">
+                <h3>Burgera komplekts</h3>
+                <p>Juicy and tender, served with herb butter and seasonal vegetables.</p>
+                <p class="price">$19.99</p>
+            </div>
+            <div class="menu-item">
+                <img src="static/Images/pizza.jpg" alt="Skolosko pica">
+                <h3>Skolosko pica</h3>
+                <p>Loaded with fresh veggies and mozzarella cheese on a stone-baked crust.</p>
+                <p class="price">$14.99</p>
+            </div>
+            <div class="menu-item">
+                <img src="static/Images/food3.jpg" alt="Zupa">
+                <h3>Kashedo zupa</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="price">$7.99</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Restorāns</p>
+        <nav>
+            <a href="#">Te</a>
+            <a href="#">Nav</a>
+        </nav>
+    </footer>
+
+    <!-- Modal -->
+    <div id="auth-modal" class="modal hidden">
+        <form class="auth-form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <script src="static/script.js"></script>
+</body>
+</html>
